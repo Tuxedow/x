@@ -1,516 +1,131 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>全国人为水土流失智能监管关键技术及应用</title>
+    <title>水土保持重点项目清单</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #333333;
+            padding: 20px;
+            background-color: #f4f9fd;
+            color: #333;
         }
         .container {
-            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            padding: 10px 0;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #4CAF50;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 5px;
-        }
-        h3 {
-            color: #8BC34A;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        li {
-            margin-bottom: 5px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 10px 0;
+            margin-bottom: 20px;
         }
         th, td {
-            border: 1px solid #dddddd;
-            padding: 8px;
+            padding: 10px;
             text-align: left;
+            border-bottom: 1px solid #ddd;
         }
         th {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #e7f3ff;
+            color: #333;
+            font-weight: bold;
         }
-        tr:nth-child(even) {
+        th:first-child, td:first-child {
+            width: 50px; /* 加宽序号列 */
+            text-align: center; /* 居中对齐 */
+        }
+        tr:hover {
             background-color: #f9f9f9;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 10px auto;
-        }
-        .chart-container {
-            text-align: center;
-            margin: 10px 0;
-        }
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .category {
+            font-size: 18px;
+            color: #248bea;
+            font-weight: bold;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>全国人为水土流失智能监管关键技术及应用</h1>
-    </header>
     <div class="container">
-        <section id="intro">
-            <h2>1. 研究背景</h2>
-            <article>
-                <h3>人为水土流失问题严重</h3>
-                <ul>
-                    <li>人为水土流失导致土壤和水资源损失，威胁生态系统健康，制约可持续发展。</li>
-                    <li>我国人为水土流失日益严重，生产建设项目是重要诱因。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>监管需求迫切</h3>
-                <ul>
-                    <li>传统监管方式效率低、成本高，难以满足全覆盖、实时监管的需求。</li>
-                    <li>急需借助新技术提升监管效能。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>政策支持</h3>
-                <ul>
-                    <li>党中央重视生态文明建设。</li>
-                    <li>水利部等相关部门出台系列政策，推动水土保持监管信息化、智能化发展。</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="research-method">
-            <h2>2. 总体研究思路和技术路线</h2>
-            <article>
-                <h3>构建全流程智能监管模式</h3>
-                <ul>
-                    <li>创建涵盖解译、判别、复核、认定、查处、整改的全流程水土保持监管技术体系。</li>
-                    <li>打通数据鸿沟，实现全流程管理。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>研发关键技术</h3>
-                <ul>
-                    <li>包括扰动图斑智能解译提取技术、人为水土流失风险预警技术等。</li>
-                    <li>提升监管工作的智能化水平。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>集成开发监管平台</h3>
-                <ul>
-                    <li>构建遥感协同解译工作平台、现场核查移动平台、服务管理工作平台、工作调度移动平台。</li>
-                    <li>实现多系统数据融合和协同工作。</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="innovations">
-            <h2>3. 创新点</h2>
-            <article>
-                <h3>监管模式创新</h3>
-                <ul>
-                    <li>构建全国人为水土流失智能监管工作模式，实现全链条技术体系。</li>
-                    <li>提升监管效率与水平。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>解译技术创新</h3>
-                <ul>
-                    <li>搭建复杂特征扰动图斑自动识别深度学习模型。</li>
-                    <li>研发扰动区域边界像元级自动矢量化关键技术。</li>
-                    <li>提升解译精度与效率。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>风险预警创新</h3>
-                <ul>
-                    <li>构建 “项目－区域” 多尺度人为水土流失风险概念与判别标准体系。</li>
-                    <li>实现风险定量化评价与预警。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>平台体系创新</h3>
-                <ul>
-                    <li>构建具备新质生产力平台的智能监管平台体系。</li>
-                    <li>推动全流程国产化应用，显著提升监管工作的智能化水平。</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="comparisons">
-            <h2>4. 国内外同类技术对比</h2>
-            <article>
-                <h3>技术体系</h3>
-                <ul>
-                    <li>本技术构建了涵盖典型水土保持对象的全链路、全流程水土保持智慧监管技术体系。</li>
-                    <li>国外同类技术在部分工作环节有类似技术，但未有涵盖全流程的水土保持技术体系。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>关键技术</h3>
-                <ul>
-                    <li>在扰动图斑智能解译提取技术、合规性判别与定量分析技术、人为水土流失风险预警技术等方面，本技术在工作效率、精度等指标上具有优势。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>平台体系</h3>
-                <ul>
-                    <li>本技术的智能监管平台体系具备数据协同、作业协同、管理协同和智能应用等特点。</li>
-                    <li>同类产品功能不完善，集成度偏低。</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="achievements">
-            <h2>5. 知识产权和成果发表</h2>
-            <article>
-                <h3>发明专利</h3>
-                <ul>
-                    <li>取得 7 项国内发明专利，如水土保持生产建设项目扰动图斑提取方法等。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>计算机软件著作权</h3>
-                <ul>
-                    <li>获得 12 个计算机软件著作权，包括水土保持移动数据平台等。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>标准</h3>
-                <ul>
-                    <li>制定 5 部标准，如《水土保持信息管理技术规程》等。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>专著</h3>
-                <ul>
-                    <li>出版 4 本专著，如《深度学习在水土保持中的研究与应用》等。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>论文</h3>
-                <ul>
-                    <li>发表 22 篇论文，包括核心期刊、SCI 期刊等。</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="applications">
-            <h2>6. 应用情况及效益分析</h2>
-            <article>
-                <h3>应用情况</h3>
-                <ul>
-                    <li>2020 年起，本技术连续多年在部级、省级水土保持监管工作中应用。</li>
-                    <li>累计监管区域面积达 2433.37 万平方公里，大幅提高了监管工作效率。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>效益分析</h3>
-                <ul>
-                    <li>显著减少现场工作量，节省监管工作行政开支。</li>
-                    <li>提升水土保持监管的覆盖率和频次。</li>
-                    <li>有效保护项目周边生态环境，减少人为水土流失。</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="regulation-model">
-            <h2>7. 全流程人为水土流失智能监管工作模式</h2>
-            <article>
-                <h3>研究思路</h3>
-                <ul>
-                    <li>创建全国人为水土流失智能监管工作模式，构建全流程技术体系，提升监管效能。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>基础数据底板建设</h3>
-                <ul>
-                    <li>收集处理遥感影像，整合历史监管数据，准备判别参考数据。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>解译技术</h3>
-                <ul>
-                    <li>利用相关地理信息处理软件或解译工作平台，对人为水土流失扰动图斑进行提取和更新解译。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>合规性判别技术</h3>
-                <ul>
-                    <li>通过地理信息处理软件，将扰动图斑与水土保持方案数据库叠加分析，判别合规性。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>现场核查技术</h3>
-                <ul>
-                    <li>对疑似违法违规图斑开展现场调查取证，判别扰动图斑类型及合规性。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>合规性认定技术</h3>
-                <ul>
-                    <li>基于现场核查结果，对项目合规性进行认定。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>违法违规项目查处</h3>
-                <ul>
-                    <li>对认定的违法违规项目下达整改意见或立案查处。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>督促整改</h3>
-                <ul>
-                    <li>督促生产建设单位限期完成整改，实行对账销号管理。</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="identification-technology">
-            <h2>8. 扰动图斑智能识别技术</h2>
-            <article>
-                <h3>深度学习模型构建</h3>
-                <ul>
-                    <li>基于国产高分系列卫星遥感影像，构建扰动图斑智能识别深度学习模型，确定最优模型和超参数。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>样本数据制作</h3>
-                <ul>
-                    <li>制作高质量的生产建设项目扰动对象学习样本，用于模型训练和验证。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>模型训练与构建</h3>
-                <ul>
-                    <li>采用分布式的大规模并行计算算法优化技术，对模型进行训练，提高解译精度和效率。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>滑动窗口尺寸与解译精度关系</h3>
-                <ul>
-                    <li>研究不同滑动窗口尺寸对解译精度的影响，确定推荐的滑动窗口大小。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>模型应用验证</h3>
-                <ul>
-                    <li>在多个市县进行模型应用效果验证，结果表明模型具有良好的泛化能力和实用性。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>边界提取自动矢量化</h3>
-                <ul>
-                    <li>使用图像处理技术和空间数据处理技术，实现扰动图斑边界自动勾绘的矢量文件生成。</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="risk-warning">
-            <h2>9. 人为水土流失风险预警技术</h2>
-            <article>
-                <h3>研究思路</h3>
-                <ul>
-                    <li>梳理人为水土流失风险影响因素清单，构建风险评价指标体系，构建风险预警模型。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>指标筛选与计算</h3>
-                <ul>
-                    <li>确定项目层次和区域层次的风险指标，如扰动图斑内部坡度平均值、高程均方差等，并明确各指标的数学计算方法。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>风险模型构建</h3>
-                <ul>
-                    <li>采用欧式距离等方法构建项目层次和区域层次的风险模型，实现风险判定、等级评定和风险预警。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>应用与分析</h3>
-                <ul>
-                    <li>以贵州省 2022 年生产建设项目和河南省 2022 年相关扰动图斑为例，开展风险预警技术的应用分析，取得良好效果。</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="platform-system">
-            <h2>10. 人为水土流失智能监管平台体系</h2>
-            <article>
-                <h3>平台建设思路</h3>
-                <ul>
-                    <li>围绕全链路水土保持智能监管工作模式，综合应用多种技术，构建 “水土保持监管一张图”，研发集成四大平台为一体的人为水土流失智能监管平台软件体系。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>平台总体设计</h3>
-                <ul>
-                    <li>包括技术构架设计和功能开发设计，充分利用现有信息基础设施，打造集 “一张图、四支撑、四应用、两保障” 一体的监管平台。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>平台功能</h3>
-                <ul>
-                    <li>涵盖遥感协同解译工作平台、现场核查移动平台、服务管理工作平台、工作调度移动平台，满足不同环节的监管需求。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>平台关键技术</h3>
-                <ul>
-                    <li>涉及海量数据管理技术、数据金字塔技术、空间信息共享技术等，保障平台的高效运行和数据管理。</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="future-prospects">
-            <h2>11. 推广应用与效益分析</h2>
-            <article>
-                <h3>推广应用情况</h3>
-                <ul>
-                    <li>2020 年起，本技术在全国范围内逐步推广应用，应用面积逐年增加，监管区域不断扩大。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>效益分析</h3>
-                <ul>
-                    <li>在经济效益方面，节省大量监管工作经费。</li>
-                    <li>社会效益方面，提升水土保持监管效能，增强全社会防控意识。</li>
-                    <li>生态环境效益方面，有效减少人为水土流失，保护生态环境。</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="conclusion">
-            <h2>12. 结论与展望</h2>
-            <article>
-                <h3>主要研究成果</h3>
-                <ul>
-                    <li>创建全流程智能监管模式，研发扰动图斑智能解译技术，构建风险预警模型，集成智能监管平台体系，取得显著应用成效。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>研究存在的不足</h3>
-                <ul>
-                    <li>卫星遥感影像时效性和精度有待提升。</li>
-                    <li>扰动图斑与社会属性关联性需进一步纳入模型。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>后续研究内容</h3>
-                <ul>
-                    <li>搭建卫星遥感影像即时服务平台。</li>
-                    <li>完善风险评估与预警模型体系。</li>
-                </ul>
-            </article>
-            <article>
-                <h3>技术应用前景</h3>
-                <ul>
-                    <li>在水利行业、生态环境监测评估、国土资源管理等领域具有广泛的应用前景。</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="case-studies">
-            <h2>13. 典型案例</h2>
-            <article>
-                <h3>公路工程</h3>
-                <ul>
-                    <li>扰动面积：13.5 公顷</li>
-                    <li>水土流失问题描述：施工裸露面积大，损毁植被面积大</li>
-                </ul>
-                <div class="chart-container">
-                    <img src="https://via.placeholder.com/600x400" alt="公路工程示意图">
-                </div>
-            </article>
-            <article>
-                <h3>铁路工程</h3>
-                <ul>
-                    <li>扰动面积：63.07 公顷</li>
-                    <li>水土流失问题描述：施工裸露面积大，无水土保持措施或有措施但未发挥效益，对周边产生水土流失危害</li>
-                </ul>
-                <div class="chart-container">
-                    <img src="https://via.placeholder.com/600x400" alt="铁路工程示意图">
-                </div>
-            </article>
-            <article>
-                <h3>涉水交通工程</h3>
-                <ul>
-                    <li>扰动面积：24.58 公顷</li>
-                    <li>水土流失问题描述：无水土保持措施或有措施但未发挥效益</li>
-                </ul>
-                <div class="chart-container">
-                    <img src="https://via.placeholder.com/600x400" alt="涉水交通工程示意图">
-                </div>
-            </article>
-            <article>
-                <h3>风电工程</h3>
-                <ul>
-                    <li>扰动面积：8.11 公顷</li>
-                    <li>水土流失问题描述：无水土保持措施或有措施但未发挥效益</li>
-                </ul>
-                <div class="chart-container">
-                    <img src="https://via.placeholder.com/600x400" alt="风电工程示意图">
-                </div>
-            </article>
-            <article>
-                <h3>其他电力工程</h3>
-                <ul>
-                    <li>扰动面积：50.01 公顷</li>
-                    <li>水土流失问题描述：无水土保持措施或有措施但未发挥效益</li>
-                </ul>
-                <div class="chart-container">
-                    <img src="https://via.placeholder.com/600x400" alt="其他电力工程示意图">
-                </div>
-            </article>
-            <article>
-                <h3>水利枢纽工程</h3>
-                <ul>
-                    <li>扰动面积：15.18 公顷</li>
-                    <li>水土流失问题描述：施工裸露面积大</li>
-                </ul>
-                <div class="chart-container">
-                    <img src="https://via.placeholder.com/600x400" alt="水利枢纽工程示意图">
-                </div>
-            </article>
-        </section>
+        
+        <div class="category">监测评价类</div>
+        <table>
+            <tr>
+                <th>序号</th>
+                <th>主要里程碑项目</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>国家水土保持监测站点优化布局工程智能管理分析平台开发与数据资源建设</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>智慧水利水土保持分系统-全国水土流失动态监测数字化场景平台建设</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>高分水利遥感应用示范系统(二期)水土保持监测与评价子课题模块开发</td>
+            </tr>
+        </table>
+        
+        <div class="category">监督管理类</div>
+        <table>
+            <tr>
+                <th>序号</th>
+                <th>主要里程碑项目</th>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>全国水土保持信息管理系统水土保持数据资源目录更新及系统维护</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>生产建设项目遥感协同解译平台与区域监管平台（支撑水利部生产建设项目水土保持监管遥感解译与判别项目）</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>全国水土保持信用信息平台</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>生产建设项目水土保持方案编制与监测单位水平评价系统</td>
+            </tr>
+        </table>
+        
+        <div class="category">生态治理类</div>
+        <table>
+            <tr>
+                <th>序号</th>
+                <th>主要里程碑项目</th>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>全国小流域划分数据协同审核平台</td>
+            </tr>
+        </table>
+        
+        <div class="category">规划评估类</div>
+        <table>
+            <tr>
+                <th>序号</th>
+                <th>主要里程碑项目</th>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>全国水土保持规划实施情况评估遥感复核及评估数据管理系统</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>流域水土保持规划数据共享管理平台</td>
+            </tr>
+        </table>
+        
     </div>
-    <footer>
-        <p>© 2024 全国人为水土流失智能监管关键技术及应用</p>
-    </footer>
 </body>
 </html>
